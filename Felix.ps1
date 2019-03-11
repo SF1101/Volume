@@ -10,7 +10,7 @@ Set-AudioDevice -RecordingVolume 50
 stop-Transcript
 if ($error)
 {
-Send-MailMessage -Smtpserver "smtp.abo.fi" -From "adminreport@abo.fi" -To "john.sjoholm@abo.fi" -Subject "Error" -Body "Powershell script in <hus> <rum> has failed" -Attachments "C:\Temp\Felix\Ferror.txt"
+Send-MailMessage -Smtpserver "smtp.abo.fi" -From "adminreport@abo.fi" -To "email@here.fi" -Subject "Error" -Body "Powershell script in <hus> <rum> has failed" -Attachments "C:\Temp\Felix\Ferror.txt"
 }
 else {
 exit
